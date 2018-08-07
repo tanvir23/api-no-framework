@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing Clitehd API</title>
+</head>
+<body>
+    <button id="createConfButton">Click to Create Room</button>
+    <button id="joinConfButton">Click to Join Room</button>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://unpkg.com/clitehd-external-api"></script>
+    <script type="text/babel">
+    var username = sessionStorage.getItem('username');
+    var password = sessionStorage.getItem('password');
+    var roomname = some_service();
+    document.getElementById('createConfButton').addEventListener('click', function(){
+        createRoom(username, password);
+    });
+    document.getElementById('joinConfButton').addEventListener('click', function(){
+        joinRoom(roomname);
+    });
+    </script>
+</body>
+</html>
